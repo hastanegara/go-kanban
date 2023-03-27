@@ -72,3 +72,6 @@ func GetHome(c *gin.Context) {
 		"Message": "Welcome to Kanban Board Project developed by Heidar Hastanegara",
 	})
 }
+
+// https://github.com/hastanegara/go-kanban
+// https://api.postman.com/collections/1421695-bc73f7ba-baa8-427c-8878-5f2fbc342b8f?access_key=PMAT-01GWHENMRTZ1PHDHWFEF7SEG3R

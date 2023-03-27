@@ -141,7 +141,6 @@ func TaskPost(c *gin.Context) {
 	c.JSON(http.StatusCreated, gin.H{
 		"status":  http.StatusCreated,
 		"message": "Created",
-		"data":    task,
 	})
 }
 
@@ -243,7 +242,6 @@ func TaskPut(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"status":  http.StatusOK,
 		"message": "Updated",
-		"data":    taskRequest,
 	})
 }
 
