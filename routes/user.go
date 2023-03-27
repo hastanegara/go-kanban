@@ -16,13 +16,13 @@ func UserIndex(c *gin.Context) {
 
 	config.DB.Find(&users)
 
-	userResponse := []models.UserResponse{}
+	userResponse := []models.UserSimpleResponse{}
 
 	for _, user := range users {
 		newUserScore := models.UserScoreResponse{
 			Score: user.UserScore.Score,
 		}
-		newUser := models.UserResponse{
+		newUser := models.UserSimpleResponse{
 			ID:        user.ID,
 			Username:  user.Username,
 			FullName:  user.FullName,

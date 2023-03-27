@@ -15,6 +15,14 @@ type User struct {
 	UserTasks []TaskUser `json:"user_tasks"`
 }
 
+type UserSimpleResponse struct {
+	ID        uint   `json:"id"`
+	Username  string `json:"username"`
+	FullName  string `json:"full_name"`
+	Role      uint8  `json:"role"`
+	UserScore UserScoreResponse
+}
+
 type UserResponse struct {
 	ID        uint   `json:"id"`
 	Username  string `json:"username"`
